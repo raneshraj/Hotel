@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+
+/* Navbar */
+#navbar {
+    background: #FF9843;
+    padding-top: 0px;
+
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: #86A7FC;
+    text-shadow: 0px 1px 1px black;
+}
+
+.navbar-toggler {
+    color:black;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+
+}
+.nav-item{
+    margin-left:10px  ;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    padding-left: 10px;
+}
+.navbar-nav .nav-link:hover {
+    background:#3468C0 ;
+    color: white;
+}
+
+
+
+#navbar form button{
+    background: black;
+    color: white;
+    border: none;
+}
+
+
+#navbar form button:hover{
+background:#3468C0 ;
+color: white;
+}
+
+
+.carousel-inner .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.content{
+
+    margin-top: -50px;
+    font-size: 2rem;
+
+
+}
+
+.carousel-item img{
+    opacity: 0.8;
+    background-size: cover;
+}
+
+
+.changecontent::after{
+    content: ' ';
+    color: #FF9843;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+    font-family: 'Caveat', cursive;   
+}
+
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+}
+
+
+.content h5{
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    
+}
+
+
+.carousel-item button{
+    background: white;
+}
+
+
+
+.carousel-item button:hover{
+    color: white;
+    background: black;
+    
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px)
+{
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }}
+ 
+/*search box css start here*/
+.search-sec{
+    padding: 2rem;
+    
+}
+.search-slt{
+    /* display: block; */
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        /* top: -114px; */
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(./images/uk.png);
+        background-position: center;
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(./images/uk.png);
+        background-position: center;    }
+}
+
+/* Package */
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+    text-shadow: 0px 1px 1px black;
+    font-family: 'Allerta Stencil';font-size: 35px;
+color:#ffa500;}
+
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+/* Gallery cards */
+
+
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+
+.credit{
+    text-decoration: none;
+
+}
